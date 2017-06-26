@@ -33,11 +33,13 @@ public class Tidez : MonoBehaviour {
 //x		only using 1/2 of the veritical space
 //x		guess we need to scale everything dynamically...poop
 //	v1.3
-//	better points for wind waves
+//x	better points for wind waves
 //	current predictions
 //  current graph examples: http://l-36.com/weather.php?lat=47.91&lon=-122.3&point1=Mukilteo,+WA&point2=Marine+Location+Near+Mukilteo,+WA&tide1=Glendale,+Whidbey+Island,+Washington&tide2=Apple+Cove+Point,+0.5+mile+E+of,+Washington+Current&lat_long1=47.91,-122.3&radar=ATX&radar2=RTX&station=sew&ports=9447130&rss=wpow1&rss2=ebsw1&rss3=ptww1&airport=KPAE&geos=west/nw&lat_long2=47.91,-122.3&yd10=on&zone1=PZZ134&zone2=PZZ100&v=0.50&where=Mukilteo,+WA
+//x	start day to string for day of week -- duh
 //  v1.4
 //	improved graphing
+
 
 	private NOAA.TidePredictions predictions = null;
 

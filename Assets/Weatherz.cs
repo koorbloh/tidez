@@ -38,12 +38,12 @@ public class Weatherz : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		buttonToCoordMap.Add ("Friday Harbor", new Vector2 (48.577655f, -122.855933f));
+		buttonToCoordMap.Add ("Foul Weather Bluff", new Vector2 (47.948556f, -122.584284f));
+		buttonToCoordMap.Add ("Tacoma", new Vector2 (47.326957f, -122.432850f));
 		buttonToCoordMap.Add ("Seattle", new Vector2 (47.601667f, -122.338333f));
-		buttonToCoordMap.Add ("Tacoma", new Vector2 (47.270000f, -122.413333f));
-		buttonToCoordMap.Add ("Port Townsend", new Vector2 (48.113333f, -122.760000f));
-		buttonToCoordMap.Add ("Friday Harbor", new Vector2 (48.545000f, -123.013333f));
-		buttonToCoordMap.Add ("Foul Weather Bluff", new Vector2 (47.926667f, -122.616667f));
-		buttonToCoordMap.Add ("Everett", new Vector2 (47.980000f, -122.223333f));
+		buttonToCoordMap.Add ("Everett", new Vector2 (47.981434f, -122.292339f));
+		buttonToCoordMap.Add ("Port Townsend", new Vector2 (48.121882f, -122.683192f));
 
 		//random ass point out in the effin straight of juan de fuca, REALLY helpful for debugging
 		//buttonToCoordMap.Add ("Everett", new Vector2 (48.260730f, -122.877708f));
@@ -63,9 +63,6 @@ public class Weatherz : MonoBehaviour {
 		if (buttonToCoordMap.ContainsKey(selectedText.text)) {
 			GetWeather (buttonToCoordMap [selectedText.text]);
 		}
-
-		WeatherText.text = "TOTALLY PENDING";
-
 	}
 
 	void GetWeather(Vector2 coord) {
@@ -77,7 +74,6 @@ public class Weatherz : MonoBehaviour {
 		} else {
 			StartCoroutine (GetPointData (url));
 		}
-		WeatherText.text = WeatherText.text + "\nREQ 1 SEND";
 	}
 
 	IEnumerator GetPointData(string url) {
@@ -178,7 +174,7 @@ public class Weatherz : MonoBehaviour {
 				} else {
 					--numToBlindlyInclude;
 				}
-				weather += (period.name + " " + period.shortForecast + "\n");
+				weather += ("<b>" + period.name + "</b> " + period.shortForecast + "\n");
 				weather += (period.temperature + "° " + period.temperatureTrend + " " +" Wind: " + period.windSpeed + " " + period.windDirection + "\n");
 			}
 

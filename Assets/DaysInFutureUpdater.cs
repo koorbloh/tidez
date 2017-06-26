@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -10,7 +11,10 @@ public class DaysInFutureUpdater : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
+		DateTime now = DateTime.Now;
+		string day = now.DayOfWeek.ToString ();
+		GetComponent<UnityEngine.UI.Text> ().text = "Start Day: " + day;
+
 	}
 	
 	// Update is called once per frame
@@ -21,6 +25,8 @@ public class DaysInFutureUpdater : MonoBehaviour {
 	public void onDaysInFutureChanged() {
 		tides.updateStartDay ((int)slider.value);
 		weathers.updateStartDay ((int)slider.value);
-		GetComponent<UnityEngine.UI.Text> ().text = "Start Day Offset: " + slider.value.ToString ();
+		DateTime now = DateTime.Now;
+		string day = now.AddDays (slider.value).DayOfWeek.ToString ();
+		GetComponent<UnityEngine.UI.Text> ().text = "Start Day: " + day;
 	}
 }
