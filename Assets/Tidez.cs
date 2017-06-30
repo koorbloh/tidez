@@ -35,7 +35,7 @@ public class Tidez : MonoBehaviour {
 //	v1.3
 //x	better points for wind waves
 //	current predictions
-//  current graph examples: http://l-36.com/weather.php?lat=47.91&lon=-122.3&point1=Mukilteo,+WA&point2=Marine+Location+Near+Mukilteo,+WA&tide1=Glendale,+Whidbey+Island,+Washington&tide2=Apple+Cove+Point,+0.5+mile+E+of,+Washington+Current&lat_long1=47.91,-122.3&radar=ATX&radar2=RTX&station=sew&ports=9447130&rss=wpow1&rss2=ebsw1&rss3=ptww1&airport=KPAE&geos=west/nw&lat_long2=47.91,-122.3&yd10=on&zone1=PZZ134&zone2=PZZ100&v=0.50&where=Mukilteo,+WA
+//x  current graph examples: http://l-36.com/weather.php?lat=47.91&lon=-122.3&point1=Mukilteo,+WA&point2=Marine+Location+Near+Mukilteo,+WA&tide1=Glendale,+Whidbey+Island,+Washington&tide2=Apple+Cove+Point,+0.5+mile+E+of,+Washington+Current&lat_long1=47.91,-122.3&radar=ATX&radar2=RTX&station=sew&ports=9447130&rss=wpow1&rss2=ebsw1&rss3=ptww1&airport=KPAE&geos=west/nw&lat_long2=47.91,-122.3&yd10=on&zone1=PZZ134&zone2=PZZ100&v=0.50&where=Mukilteo,+WA
 //x	start day to string for day of week -- duh
 //  v1.4
 //	improved graphing
@@ -129,7 +129,7 @@ public class Tidez : MonoBehaviour {
 		for (int i = 0; i < predictions.predictions.Count; ++i) {
 			float level = float.Parse (predictions.predictions [i].v);
 			int xCoord = (int)(texture.width * i) / predictions.predictions.Count;
-			texture.SetPixel(xCoord,(int)(level * 7) + axisHeight, Color.blue);
+			texture.SetPixel(xCoord,(int)(level * 14) + axisHeight, Color.blue);
 
 			DateTime current = DateTime.Parse (predictions.predictions [i].t);
 

@@ -8,6 +8,7 @@ public class DaysInFutureUpdater : MonoBehaviour {
 	public UnityEngine.UI.Slider slider;
 	public Tidez tides;
 	public Weatherz weathers;
+	public Currentz currents;
 
 	// Use this for initialization
 	void Start () {
@@ -25,6 +26,7 @@ public class DaysInFutureUpdater : MonoBehaviour {
 	public void onDaysInFutureChanged() {
 		tides.updateStartDay ((int)slider.value);
 		weathers.updateStartDay ((int)slider.value);
+		currents.updateStartDay ((int)slider.value);
 		DateTime now = DateTime.Now;
 		string day = now.AddDays (slider.value).DayOfWeek.ToString ();
 		GetComponent<UnityEngine.UI.Text> ().text = "Start Day: " + day;

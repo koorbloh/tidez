@@ -46,7 +46,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Currentz.cs" />
      <Compile Include="Assets\DaysInFutureUpdater.cs" />
+     <Compile Include="Assets\NOAACurrent.cs" />
      <Compile Include="Assets\NOAATidez.cs" />
      <Compile Include="Assets\NOAAWeatherz.cs" />
      <Compile Include="Assets\Tidez.cs" />
