@@ -49,33 +49,33 @@ public class Currentz : MonoBehaviour {
 		Dictionary<int, string> locationData = new Dictionary<int, string> ();
 
 			locationData = new Dictionary<int, string> ();
-			locationData [2017] = "currents/port_townsend_current_2017";
-			locationData [2018] = "currents/port_townsend_current_2018";
-			locationData [2019] = "currents/port_townsend_current_2019";
+			locationData [2017] = "currents/friday_harbor_current_2017";
+			locationData [2018] = "currents/friday_harbor_current_2018";
+			locationData [2019] = "currents/friday_harbor_current_2019";
 		buttonToYearToFileMap.Add ("Friday Harbor",      locationData);
 
 			locationData = new Dictionary<int, string> ();
-			locationData [2017] = "currents/port_townsend_current_2017";
-			locationData [2018] = "currents/port_townsend_current_2018";
-			locationData [2019] = "currents/port_townsend_current_2019";
+			locationData [2017] = "currents/foul_weather_bluff_current_2017";
+			locationData [2018] = "currents/foul_weather_bluff_current_2018";
+			locationData [2019] = "currents/foul_weather_bluff_current_2019";
 		buttonToYearToFileMap.Add ("Foul Weather Bluff", locationData);
 			
 			locationData = new Dictionary<int, string> ();
-			locationData [2017] = "currents/port_townsend_current_2017";
-			locationData [2018] = "currents/port_townsend_current_2018";
-			locationData [2019] = "currents/port_townsend_current_2019";
+			locationData [2017] = "currents/tacoma_current_2017";
+			locationData [2018] = "currents/tacoma_current_2018";
+			locationData [2019] = "currents/tacoma_current_2019";
 		buttonToYearToFileMap.Add ("Tacoma",             locationData);
 			
 			locationData = new Dictionary<int, string> ();
-			locationData [2017] = "currents/port_townsend_current_2017";
-			locationData [2018] = "currents/port_townsend_current_2018";
-			locationData [2019] = "currents/port_townsend_current_2019";
+			locationData [2017] = "currents/seattle_current_2017";
+			locationData [2018] = "currents/seattle_current_2018";
+			locationData [2019] = "currents/seattle_current_2019";
 		buttonToYearToFileMap.Add ("Seattle",            locationData);
 			
 			locationData = new Dictionary<int, string> ();
-			locationData [2017] = "currents/port_townsend_current_2017";
-			locationData [2018] = "currents/port_townsend_current_2018";
-			locationData [2019] = "currents/port_townsend_current_2019";
+			locationData [2017] = "currents/foul_weather_bluff_current_2017";
+			locationData [2018] = "currents/foul_weather_bluff_current_2018";
+			locationData [2019] = "currents/foul_weather_bluff_current_2019";
 		buttonToYearToFileMap.Add ("Everett",            locationData);
 			
 			locationData = new Dictionary<int, string> ();
