@@ -197,59 +197,18 @@ public class Weatherz : MonoBehaviour {
 			return;
 		}
 
-		Texture2D texture = new Texture2D(imageDimensionsX, imageDimensionsY);
-		int graduations = axisHeight;
-		for (int y = 0; y < texture.height; y++)
-		{
-			for (int x = 0; x < texture.width; x++)
-			{
-				Color color = Color.white;
-				if (y == axisHeight) {
-					color = Color.black;	
-				} else if (y % graduations == 0) {
-					color = Color.grey;
-				}
-				texture.SetPixel(x, y, color);
-			}
-		}
-
-
-		DateTime graphStartTime = DateTime.Today.AddDays(startDayOffset);
-		int minutesPerPixel = (3 * 24 * 60)/imageDimensionsX;
-		DateTime lastLine = graphStartTime;
-		DateTime now = DateTime.Now;
-		//for every x pixel
 		int pixelsPerFoot = axisHeight;
-		bool flipper = false;
-		for (int x = 0; x < texture.width; ++x) {
-			//find a y pixel
-			float feet = 10 * pixelsPerFoot * getPredictedWindWaveHeightAtTime(gridForecastData.properties.windWaveHeight, graphStartTime.AddMinutes(minutesPerPixel * x));
-			texture.SetPixel (x, (int)feet + axisHeight, Color.blue);
-			texture.SetPixel (x, (int)feet + axisHeight+1, Color.blue);
-			texture.SetPixel (x, (int)feet + axisHeight+2, Color.blue);
-			//if it's been 4 hours since we last drew a line, draw one
-			if (graphStartTime.AddMinutes(minutesPerPixel * x) > lastLine.AddHours(4)) {
-				for (int y = 0; y < imageDimensionsY; ++y) {
-					if (flipper) 
-						texture.SetPixel (x, y, Color.black);
-					else 
-						texture.SetPixel (x, y, Color.grey);
-				}
-				flipper = !flipper;
-				lastLine = graphStartTime.AddMinutes (minutesPerPixel * x);
-			}
+		Texture2D texture = new Texture2D(imageDimensionsX, imageDimensionsY);
+		new Graphz (texture, axisHeight, DateTime.Today.AddDays(startDayOffset), imageDimensionsX, imageDimensionsY).graphData ((delegate(DateTime time) {
+			return 10 * pixelsPerFoot * getPredictedWindWaveHeightAtTime(gridForecastData.properties.windWaveHeight, time);
+		}), (delegate() {
+			List<Graphz.DataPoint> points = new List<Graphz.DataPoint>();
+			points.Add(new Graphz.DataPoint(axisHeight, Color.black));
+			points.Add(new Graphz.DataPoint(axisHeight*2, Color.grey));
+			points.Add(new Graphz.DataPoint(axisHeight*3, Color.grey));
 
-			//if it's basically now, draw a red line
-			if (graphStartTime.AddMinutes(minutesPerPixel * (x-1)) < now && now < graphStartTime.AddMinutes(minutesPerPixel * x)) {
-				for (int y = 0; y < imageDimensionsY; ++y) {
-					texture.SetPixel (x, y, Color.red);
-					texture.SetPixel (x+1, y, Color.red);
-					texture.SetPixel (x-1, y, Color.red);
-				}
-			}
-		}
-				
-		texture.Apply();
+			return points;			
+		}));
 
 		Sprite oldSprite = waveChart.sprite;
 		waveChart.sprite = Sprite.Create(texture, new Rect(0,0, imageDimensionsX, imageDimensionsY), oldSprite.pivot);		

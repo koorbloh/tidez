@@ -91,57 +91,21 @@ public class Currentz : MonoBehaviour {
 	void GraphCurrents(string fileToLoad) {
 
 		Texture2D texture = new Texture2D(imageDimensionsX, imageDimensionsY);
-		for (int y = 0; y < texture.height; y++)
-		{
-			for (int x = 0; x < texture.width; x++)
-			{
-				Color color = Color.white;
-				if (y == axisHeight) {
-					color = Color.black;	
-				}
-				texture.SetPixel(x, y, color);
-			}
-		}
 
-		DateTime now = DateTime.Now;
-		DateTime startTime = DateTime.Today.AddDays (startDayOffset);
 		CurrentData currentData = new CurrentData (fileToLoad);
-		DateTime lastLine = startTime;
-		int minutesPerPixel = (3 * 24 * 60)/imageDimensionsX;
-		bool flipper = false;
-		for (int x = 0; x < texture.width; x++) {
-			texture.SetPixel (x, axisHeight + 30, Color.grey);
-			texture.SetPixel (x, axisHeight + 60, Color.black);
-			texture.SetPixel (x, axisHeight + 90, Color.grey);
-			texture.SetPixel (x, axisHeight - 30, Color.grey);
-			texture.SetPixel (x, axisHeight - 60, Color.black);
-			texture.SetPixel (x, axisHeight - 90, Color.grey);
-			int height = axisHeight + (int)(30.0f * getCurrentSpeedAtTime (currentData, startTime.AddMinutes (minutesPerPixel * x)));
-			texture.SetPixel (x, height, Color.blue);
-			texture.SetPixel (x, height+1, Color.blue);
-			texture.SetPixel (x, height-1, Color.blue);
-			if (startTime.AddMinutes(minutesPerPixel * x) > lastLine.AddHours(4)) {
-				for (int y = 0; y < imageDimensionsY; ++y) {
-					if (flipper) 
-						texture.SetPixel (x, y, Color.black);
-					else 
-						texture.SetPixel (x, y, Color.grey);
-				}
-				flipper = !flipper;
-				lastLine = startTime.AddMinutes (minutesPerPixel * x);
-			}
-
-			//if it's basically now, draw a red line
-			if (startTime.AddMinutes(minutesPerPixel * (x-1)) < now && now < startTime.AddMinutes(minutesPerPixel * x)) {
-				for (int y = 0; y < imageDimensionsY; ++y) {
-					texture.SetPixel (x, y, Color.red);
-					texture.SetPixel (x+1, y, Color.red);
-					texture.SetPixel (x-1, y, Color.red);
-				}
-			}
-		}
-			
-		texture.Apply();
+		new Graphz (texture, axisHeight, DateTime.Today.AddDays(startDayOffset), imageDimensionsX, imageDimensionsY).graphData ((delegate(DateTime time) {
+			return 30.0f * getCurrentSpeedAtTime(currentData, time);
+		}), (delegate() {
+			List<Graphz.DataPoint> points = new List<Graphz.DataPoint>();
+			points.Add(new Graphz.DataPoint(axisHeight, Color.black));
+			points.Add(new Graphz.DataPoint(axisHeight + 30, Color.grey));
+			points.Add(new Graphz.DataPoint(axisHeight + 60, Color.black));
+			points.Add(new Graphz.DataPoint(axisHeight + 90, Color.grey));
+			points.Add(new Graphz.DataPoint(axisHeight - 30, Color.grey));
+			points.Add(new Graphz.DataPoint(axisHeight - 60, Color.black));
+			points.Add(new Graphz.DataPoint(axisHeight - 90, Color.grey));
+			return points;
+		}));
 
 		Sprite oldSprite = currentChart.sprite;
 		currentChart.sprite = Sprite.Create(texture, new Rect(0,0, imageDimensionsX, imageDimensionsY), oldSprite.pivot);		

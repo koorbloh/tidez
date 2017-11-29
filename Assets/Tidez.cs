@@ -110,58 +110,30 @@ public class Tidez : MonoBehaviour {
 		predictions = JsonUtility.FromJson<NOAA.TidePredictions> (response);
 
 		Texture2D texture = new Texture2D(imageDimensionsX, imageDimensionsY);
-		for (int y = 0; y < texture.height; y++)
-		{
-			for (int x = 0; x < texture.width; x++)
-			{
-				Color color = Color.white;
-				if (y == axisHeight) {
-					color = Color.black;	
-				}
-				texture.SetPixel(x, y, color);
-			}
-		}
+		int iHint = 0;
+		DateTime lastTime = DateTime.MinValue;
+		new Graphz (texture, axisHeight, DateTime.Today.AddDays(startDayOffset), imageDimensionsX, imageDimensionsY).graphData ((delegate(DateTime time) {
 
-		DateTime now = DateTime.Now;
-		DateTime prev = new DateTime ();
-		DateTime lastBar = new DateTime ();
-		bool flipper = false;
-		for (int i = 0; i < predictions.predictions.Count; ++i) {
-			float level = float.Parse (predictions.predictions [i].v);
-			int xCoord = (int)(texture.width * i) / predictions.predictions.Count;
-			texture.SetPixel(xCoord,(int)(level * 14) + axisHeight, Color.blue);
-
-			DateTime current = DateTime.Parse (predictions.predictions [i].t);
-
-			//ok every 4 hours draw a black line
-			if (current > lastBar.AddHours(4)) {
-				Color color;
-				if (flipper) {
-					color = Color.grey;
-				} else {
-					color = Color.black;
-				}
-				flipper = !flipper;
-
-				for (int j = 0; j < texture.height; ++j) {
-					texture.SetPixel (xCoord, j, color);
-				}
-				lastBar = current;
+			if (time < lastTime) {
+				iHint = 0;
 			}
 
-			//at current time, draw a red line
-			if (prev < now && now < current) {
-				for (int j = 0; j < texture.height; ++j) {
-					texture.SetPixel (xCoord, j, Color.red);
-					texture.SetPixel (xCoord - 1, j, Color.red);
-					texture.SetPixel (xCoord + 1, j, Color.red);
+			lastTime = time;
+			for (int i = iHint; i < predictions.predictions.Count - 1; ++i) {
+				DateTime current = DateTime.Parse (predictions.predictions [i].t);
+				DateTime next = DateTime.Parse (predictions.predictions [i + 1].t);
+				if (current <= time && time < next) {
+					return 14*float.Parse(predictions.predictions[i].v);
 				}
+				iHint = i;
 			}
 
-			prev = current;
-		}
-
-		texture.Apply();
+			return 0;
+		}), (delegate() {
+			List<Graphz.DataPoint> points = new List<Graphz.DataPoint>();
+			points.Add(new Graphz.DataPoint(axisHeight, Color.black));
+			return points;			
+		}));
 
 		Sprite oldSprite = tideChart.sprite;
 		tideChart.sprite = Sprite.Create(texture, new Rect(0,0, imageDimensionsX, imageDimensionsY), oldSprite.pivot);		

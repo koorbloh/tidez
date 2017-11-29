@@ -20,3 +20,6 @@
 /data/p4/z2_unity_prototyping/tidez/Temp/bin/Debug/Unity.CecilTools.dll
 /data/p4/z2_unity_prototyping/tidez/Temp/bin/Debug/Mono.Cecil.Pdb.dll
 /data/p4/z2_unity_prototyping/tidez/Temp/bin/Debug/Mono.Cecil.Mdb.dll
+/data/p4/z2_unity_prototyping/tidez/Temp/bin/Debug/UnityEngine.Timeline.dll
+/data/p4/z2_unity_prototyping/tidez/Temp/bin/Debug/ExCSS.Unity.dll
+/data/p4/z2_unity_prototyping/tidez/Temp/bin/Debug/Unity.Legacy.NRefactory.dll
