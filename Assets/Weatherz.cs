@@ -6,13 +6,6 @@ using System;
 
 public class Weatherz : MonoBehaviour {
 
-	//	Seattle, 47.601667, -122.338333
-	//	Tacoma, 47.270000, -122.413333
-	//	Port Townsend, 48.113333, -122.760000
-	//	Friday Harbor, 48.545000, -123.013333
-	//	Foul Weather Bluff, 47.926667, -122.616667
-	//	Everett, 47.980000, -122.223333
-
 	//  https://api.weather.gov/points/47.9846,-122.5621 <-- 1 request here to get the data needed to ask the other questions
 	//	https://api.weather.gov/gridpoints/SEW/120,86 <-- grid points gives you waves, wind direction, speed,
 	//	https://api.weather.gov/points/47.9846,-122.5621/forecast  <-- points/[coord]/forecast gives you text, temp, 
@@ -38,15 +31,6 @@ public class Weatherz : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		buttonToCoordMap.Add ("Friday Harbor", new Vector2 (48.577655f, -122.855933f));
-		buttonToCoordMap.Add ("Foul Weather Bluff", new Vector2 (47.948556f, -122.584284f));
-		buttonToCoordMap.Add ("Tacoma", new Vector2 (47.326957f, -122.432850f));
-		buttonToCoordMap.Add ("Seattle", new Vector2 (47.601667f, -122.338333f));
-		buttonToCoordMap.Add ("Everett", new Vector2 (47.981434f, -122.292339f));
-		buttonToCoordMap.Add ("Port Townsend", new Vector2 (48.121882f, -122.683192f));
-
-		//random ass point out in the effin straight of juan de fuca, REALLY helpful for debugging
-		//buttonToCoordMap.Add ("Everett", new Vector2 (48.260730f, -122.877708f));
 	}
 	
 	// Update is called once per frame
@@ -65,7 +49,7 @@ public class Weatherz : MonoBehaviour {
 		}
 	}
 
-	void GetWeather(Vector2 coord) {
+	public void GetWeather(Vector2 coord) {
 		WeatherText.text = "Weather pending.....";
 		string url = new NOAAWeathers.NOAAWeatherRequestBuilder ().getUrlForPoint (coord.x, coord.y);
 		Debug.Log (url);

@@ -29,22 +29,32 @@ public class Currentz : MonoBehaviour {
 		Button selectedButton = selected.GetComponent<Button> ();
 		Text selectedText = selectedButton.GetComponentInChildren<Text> ();
 
-		int currentYear = DateTime.Today.Year;
+		GetCurrentsByLocationName (selectedText.text);
 
-		if (buttonToYearToFileMap[selectedText.text] == null ||
-			buttonToYearToFileMap[selectedText.text][currentYear] == null) {
+	}
+
+	public void GetCurrentsByLocationName(string locationName) {
+		if (locationName == null || !buttonToYearToFileMap.ContainsKey(locationName)) {
 			return;
 		}
 
-		string fileToLoad = buttonToYearToFileMap [selectedText.text] [currentYear];
+		int currentYear = DateTime.Today.Year;
+
+		if (buttonToYearToFileMap[locationName] == null ||
+			buttonToYearToFileMap[locationName][currentYear] == null) {
+			return;
+		}
+
+		string fileToLoad = buttonToYearToFileMap [locationName] [currentYear];
 
 		GraphCurrents (fileToLoad);
-
 
 	}
 
 	// Use this for initialization
 	void Start () {
+
+		//I'd love to move this data table into the poorly-named DropDownHandler that's really the big boss
 
 		Dictionary<int, string> locationData = new Dictionary<int, string> ();
 
