@@ -55,6 +55,7 @@
      <Compile Include="Assets\DaysInFutureUpdater.cs" />
      <Compile Include="Assets\DropDownHandler.cs" />
      <Compile Include="Assets\Graphz.cs" />
+     <Compile Include="Assets\Locationz.cs" />
      <Compile Include="Assets\NOAACurrent.cs" />
      <Compile Include="Assets\NOAATidez.cs" />
      <Compile Include="Assets\NOAAWeatherz.cs" />

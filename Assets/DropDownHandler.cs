@@ -9,6 +9,7 @@ public class DropDownHandler : MonoBehaviour {
 	public Tidez tidez;
 	public Weatherz weatherz;
 	public Currentz currentz;
+	public Locationz locationz;
 
 	//THESE ORDERS MATTER, AND THAT'S GROSS
 	//THEY NEED TO MATCH UP WITH THE DROP DOWN
@@ -36,6 +37,8 @@ public class DropDownHandler : MonoBehaviour {
 		new datadata ("Foul Weather Bluff", 9445016, new Vector2 (47.948556f, -122.584284f)),
 		new datadata ("Seattle", 9447130, new Vector2 (47.601667f, -122.338333f)),
 		new datadata ("Home", -1, new Vector2 (47.888900f, -121.930150f)),
+//		new datadata ("Here", -1, new Vector2 (-1000, -1000)),
+		new datadata ("Here", -1, new Vector2 (42.48f, -114.45f)),
 	};
 	
 	// Use this for initialization
@@ -54,6 +57,14 @@ public class DropDownHandler : MonoBehaviour {
 	public void handleLocationDropdownChanged(int selected) {
 		tidez.GetTidesButton (data [selected].stationId, data[selected].location); 
 		currentz.GetCurrentsByLocationName (data [selected].location);
+		Vector2 coord = data [selected].coord;
+		if (coord.x == 1000 && coord.y == 1000) {
+			if (!locationz.getReady()) {
+				return;
+			}
+			coord.x = locationz.getLat ();
+			coord.y = locationz.getLon ();
+		}
 		weatherz.GetWeather (data [selected].coord);
 	}
 }
