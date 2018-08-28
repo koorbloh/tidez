@@ -12,6 +12,7 @@ public class Weatherz : MonoBehaviour {
 
 	public Image waveChart;
 	public Text WeatherText;
+	public Text CurrentConditionsText;
 	public int NumForeCasts = 3;
 
 	public int axisHeight = 50;
@@ -51,6 +52,7 @@ public class Weatherz : MonoBehaviour {
 
 	public void GetWeather(Vector2 coord) {
 		WeatherText.text = "Weather pending.....";
+		CurrentConditionsText.text = "Current Conditions:\nPending.....";
 		string url = new NOAAWeathers.NOAAWeatherRequestBuilder ().getUrlForPoint (coord.x, coord.y);
 		Debug.Log (url);
 		if (requestToResponseMap.ContainsValue(url)) {
@@ -143,7 +145,7 @@ public class Weatherz : MonoBehaviour {
 		//find the first forecast that isn't over yet from when the start date is
 		//then show the next 3? forecasts?
 		int numToBlindlyInclude = 0;
-		DateTime weatherStart = DateTime.Today.AddDays (startDayOffset);
+		DateTime weatherStart = DateTime.Today.AddDays (startDayOffset).AddHours(-3);
 		string weather = "";
 		for (int i = 0; i < pointForecastData.properties.periods.Length; ++i) {
 			NOAAWeathers.PointForecastData_period period = pointForecastData.properties.periods [i];
@@ -152,7 +154,7 @@ public class Weatherz : MonoBehaviour {
 			//I tried for like 6 minutes to only include 3 forecasts, then I decided to let the text box limit it beacuse I don't care
 			//The text box will hold like 3-ish forecasts
 			//the start date thing works great though
-			if (numToBlindlyInclude > 0 || startTime > weatherStart && weatherStart < endTime) {
+			if (numToBlindlyInclude > 0 || startTime >= weatherStart && weatherStart < endTime) {
 				if (numToBlindlyInclude == 0) {
 					numToBlindlyInclude = NumForeCasts;
 				} else {
@@ -178,25 +180,77 @@ public class Weatherz : MonoBehaviour {
 			gridForecastData.properties.windWaveHeight == null ||
 			gridForecastData.properties.windWaveHeight.values == null ||
 			gridForecastData.properties.windWaveHeight.values.Length == 0) {
-			return;
+			//kinda gross to use an empty if here and use the else to go, but I changed it from an early out and didn't want to think
+		} else { 
+			int pixelsPerFoot = axisHeight;
+			Texture2D texture = new Texture2D(imageDimensionsX, imageDimensionsY);
+			new Graphz(texture, axisHeight, DateTime.Today.AddDays(startDayOffset), imageDimensionsX, imageDimensionsY)
+				.graphData(
+					(delegate(DateTime time)
+					{
+						return 10 * pixelsPerFoot * getPredictedWindWaveHeightAtTime(gridForecastData.properties.windWaveHeight, time);
+					}), (delegate()
+					{
+						List<Graphz.DataPoint> points = new List<Graphz.DataPoint>();
+						points.Add(new Graphz.DataPoint(axisHeight, Color.black));
+						points.Add(new Graphz.DataPoint(axisHeight * 2, Color.grey));
+						points.Add(new Graphz.DataPoint(axisHeight * 3, Color.grey));
+
+						return points;
+					}));
+
+			Sprite oldSprite = waveChart.sprite;
+			waveChart.sprite = Sprite.Create(texture, new Rect(0,0, imageDimensionsX, imageDimensionsY), oldSprite.pivot);		
 		}
 
-		int pixelsPerFoot = axisHeight;
-		Texture2D texture = new Texture2D(imageDimensionsX, imageDimensionsY);
-		new Graphz (texture, axisHeight, DateTime.Today.AddDays(startDayOffset), imageDimensionsX, imageDimensionsY).graphData ((delegate(DateTime time) {
-			return 10 * pixelsPerFoot * getPredictedWindWaveHeightAtTime(gridForecastData.properties.windWaveHeight, time);
-		}), (delegate() {
-			List<Graphz.DataPoint> points = new List<Graphz.DataPoint>();
-			points.Add(new Graphz.DataPoint(axisHeight, Color.black));
-			points.Add(new Graphz.DataPoint(axisHeight*2, Color.grey));
-			points.Add(new Graphz.DataPoint(axisHeight*3, Color.grey));
+		CurrentConditionsText.text = "<b>Current Conditions:</b>\n";
+		if (gridForecastData == null ||
+		    gridForecastData.properties == null ||
+		    gridForecastData.properties.windSpeed == null ||
+		    gridForecastData.properties.windSpeed.values == null ||
+		    gridForecastData.properties.windSpeed.values.Length == 0)
+		{
+			//kinda gross to use an empty if here and use the else to go, but I changed it from an early out and didn't want to think
+		}
+		else
+		{
+			//CURRENT WIND
+			float windSpeedMetersPerSecond = gridForecastData.properties.windSpeed.values[0].value;
+			float windSpeedMilesPerHour = 2.23694f * windSpeedMetersPerSecond;
+			CurrentConditionsText.text += "Wind: " + String.Format("{0:###.00}",windSpeedMetersPerSecond) + " MPH\n";
+		}
+		
+		if (gridForecastData == null ||
+		    gridForecastData.properties == null ||
+		    gridForecastData.properties.windDirection == null ||
+		    gridForecastData.properties.windDirection.values == null ||
+		    gridForecastData.properties.windDirection.values.Length == 0)
+		{
+			//kinda gross to use an empty if here and use the else to go, but I changed it from an early out and didn't want to think
+		}
+		else
+		{
+			//CURRENT WIND DIRECTION
+			//http://snowfence.umn.edu/Components/winddirectionanddegreeswithouttable3.htm
+			float currentWindDirectionDegreees = gridForecastData.properties.windDirection.values[0].value;
+		}
+		
 
-			return points;			
-		}));
-
-		Sprite oldSprite = waveChart.sprite;
-		waveChart.sprite = Sprite.Create(texture, new Rect(0,0, imageDimensionsX, imageDimensionsY), oldSprite.pivot);		
-
+		if (gridForecastData == null ||
+		    gridForecastData.properties == null ||
+		    gridForecastData.properties.temperature == null ||
+		    gridForecastData.properties.temperature.values == null ||
+		    gridForecastData.properties.temperature.values.Length == 0)
+		{
+			//kinda gross to use an empty if here and use the else to go, but I changed it from an early out and didn't want to think
+		}
+		else
+		{
+			//CURRENT TEMP
+			float currentTempCelcius = gridForecastData.properties.temperature.values[0].value;
+			float currentTempFreedom = currentTempCelcius * 9 / 5 + 32;
+			CurrentConditionsText.text += "Temp: " + String.Format("{0:###.00}",currentTempFreedom) + " F";
+		}
 	}
 
 	private bool parseDateAndDuration(string dateAndDuration, out DateTime dateTime, out TimeSpan duration) {

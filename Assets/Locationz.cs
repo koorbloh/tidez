@@ -12,7 +12,7 @@ public class Locationz : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+
 	}
 
 	public int maxWaitSeconds = 20;
@@ -43,7 +43,7 @@ public class Locationz : MonoBehaviour {
 		}
 
 		// Start service before querying location
-		Input.location.Start();
+		Input.location.Start(2,2);
 
 		// Wait until service initializes
 		while (Input.location.status == LocationServiceStatus.Initializing && maxWaitSeconds > 0)

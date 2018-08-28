@@ -37,8 +37,8 @@ public class DropDownHandler : MonoBehaviour {
 		new datadata ("Foul Weather Bluff", 9445016, new Vector2 (47.948556f, -122.584284f)),
 		new datadata ("Seattle", 9447130, new Vector2 (47.601667f, -122.338333f)),
 		new datadata ("Home", -1, new Vector2 (47.888900f, -121.930150f)),
-//		new datadata ("Here", -1, new Vector2 (-1000, -1000)),
-		new datadata ("Here", -1, new Vector2 (42.48f, -114.45f)),
+		new datadata ("Here", -1, new Vector2 (-1000, -1000)),
+//		new datadata ("Here", -1, new Vector2 (42.48f, -114.45f)),
 	};
 	
 	// Use this for initialization

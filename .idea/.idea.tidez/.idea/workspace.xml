@@ -1,0 +1,724 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2270f12f-ab9b-44ac-83f0-92cbc11f527a" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DropDownHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/DropDownHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Graphz.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Graphz.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Locationz.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Locationz.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NOAATidez.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NOAATidez.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NOAAWeatherz.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NOAAWeatherz.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tidez.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tidez.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Weatherz.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Weatherz.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/AssetImportState" beforeDir="false" afterPath="$PROJECT_DIR$/Library/AssetImportState" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/CurrentLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/EditorUserBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/EditorUserBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/LastBuild.buildreport" beforeDir="false" afterPath="$PROJECT_DIR$/Library/LastBuild.buildreport" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/Data/Managed/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/Data/Managed/Assembly-CSharp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/Data/Managed/Assembly-CSharp.dll.mdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/Data/Managed/Assembly-CSharp.dll.mdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/Data/PlayerConnectionConfigFile" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/Data/PlayerConnectionConfigFile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/Data/data.unity3d" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/Data/data.unity3d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll.mdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll.mdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/BuiltinAssemblies.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/BuiltinAssemblies.stamp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptMapper" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptMapper" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/assetDatabase3" beforeDir="false" afterPath="$PROJECT_DIR$/Library/assetDatabase3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/expandedItems" beforeDir="false" afterPath="$PROJECT_DIR$/Library/expandedItems" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/00/00000000000000004000000000000000" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/00/00000000000000004000000000000000" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/0d/0d3bb855445e36e479c85976fc88383a" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/0d/0d3bb855445e36e479c85976fc88383a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/12/12fd8a0055b84bb59e84c9835a37e333" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/12/12fd8a0055b84bb59e84c9835a37e333" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/12/12fd8a0055b84bb59e84c9835a37e333.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/12/12fd8a0055b84bb59e84c9835a37e333.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/1c/1c6d1fbb51834b64847b1b73a75bfc77" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/1c/1c6d1fbb51834b64847b1b73a75bfc77" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/1c/1c6d1fbb51834b64847b1b73a75bfc77.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/1c/1c6d1fbb51834b64847b1b73a75bfc77.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/21/21eff446d50eaf44a85985cd4c0b6fa1" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/21/21eff446d50eaf44a85985cd4c0b6fa1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/26/2682a692a2be7e14e901a738c7806da0" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/26/2682a692a2be7e14e901a738c7806da0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/30/3028af1b39778406ca7c883501466398" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/30/3028af1b39778406ca7c883501466398" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/32/32188fd89022c154c81befa2f0e00be0" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/32/32188fd89022c154c81befa2f0e00be0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/37/3769d2a167f844c2c8be210b1f235937" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/37/3769d2a167f844c2c8be210b1f235937" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/38/38c8faf1788024c02930a0c68a6e0edc" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/38/38c8faf1788024c02930a0c68a6e0edc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/40/405b9b51bb344a128608d968297df79c" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/40/405b9b51bb344a128608d968297df79c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/41/4113173d5e95493ab8765d7b08371de4" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/41/4113173d5e95493ab8765d7b08371de4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/41/4113173d5e95493ab8765d7b08371de4.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/41/4113173d5e95493ab8765d7b08371de4.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/44/44a3ab3fb5acf4a0fbf750212da2c580" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/44/44a3ab3fb5acf4a0fbf750212da2c580" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/4b/4b3fa4bde7f1451a8218c03ee6a8ded8" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/4b/4b3fa4bde7f1451a8218c03ee6a8ded8" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/4b/4ba2329b63d54f0187bcaa12486b1b0f" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/4b/4ba2329b63d54f0187bcaa12486b1b0f" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/51/517af1b5b81b93b43b9745d58f017562" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/51/517af1b5b81b93b43b9745d58f017562" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/53/53ebcfaa2e1e4e2dbc85882cd5a73fa1" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/53/53ebcfaa2e1e4e2dbc85882cd5a73fa1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/57/5782f9e9e6e0bb94bac99aeea24814fc" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/57/5782f9e9e6e0bb94bac99aeea24814fc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/5f/5f32cd94baa94578a686d4b9d6b660f7" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/5f/5f32cd94baa94578a686d4b9d6b660f7" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/6a/6a10b2909283487f913b00d94cd3faf5" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/6a/6a10b2909283487f913b00d94cd3faf5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/6e/6eb82beb346724f329069bae1dd2764c" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/6e/6eb82beb346724f329069bae1dd2764c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/73/739bbd9f364b4268874f9fd86ab3beef" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/73/739bbd9f364b4268874f9fd86ab3beef.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/76/7668179ede524d6396c8b7d84461ea29" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/76/7668179ede524d6396c8b7d84461ea29" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/76/7668179ede524d6396c8b7d84461ea29.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/76/7668179ede524d6396c8b7d84461ea29.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/80/80a3616ca19596e4da0f10f14d241e9f" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/80/80a3616ca19596e4da0f10f14d241e9f" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/83/8382b2bb260241859771b69b7f377a8d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/83/8382b2bb260241859771b69b7f377a8d.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/84/844f815391db42d49455cbf1a7bfc434" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/84/844f815391db42d49455cbf1a7bfc434" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/85/852e56802eb941638acbb491814497b0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/85/852e56802eb941638acbb491814497b0.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/86/86f4de9468454445ac2f39e207fafa3a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/86/86f4de9468454445ac2f39e207fafa3a.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/87/870353891bb340e2b2a9c8707e7419ba" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/87/870353891bb340e2b2a9c8707e7419ba" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/8c/8cb577d8e4607482cb48fe384a670358" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/8c/8cb577d8e4607482cb48fe384a670358" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/8e/8e0cd8ed44d4412cbe0642067abc9e44" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/8e/8e0cd8ed44d4412cbe0642067abc9e44.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/8e/8e2c28b31e7194578b22c1948b89c715" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/8e/8e2c28b31e7194578b22c1948b89c715" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/8e/8e7066e382b0fc749b25dbb1a3004dfe" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/8e/8e7066e382b0fc749b25dbb1a3004dfe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/97/97decbdab0634cdd991f8d23ddf0dead" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/97/97decbdab0634cdd991f8d23ddf0dead.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/ad/adebbd281f1a4ef3a30be7f21937e02f" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/ad/adebbd281f1a4ef3a30be7f21937e02f" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/b2/b2bead50dbf86924f8e51f03ddbebf70" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/b2/b2bead50dbf86924f8e51f03ddbebf70" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/b2/b2f859e5626a3464e93636f0b68b71a0" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/b2/b2f859e5626a3464e93636f0b68b71a0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/b7/b7be4c16962e24d7e932285b31d62cbb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/b7/b7be4c16962e24d7e932285b31d62cbb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/d5/d5476e9b5e4084f4ea445017d02f3cfc" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/d5/d5476e9b5e4084f4ea445017d02f3cfc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/dc/dc443db3e92b4983b9738c1131f555cb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/dc/dc443db3e92b4983b9738c1131f555cb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/e1/e1007cd261c84053beb0c3537782908d" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/e1/e1007cd261c84053beb0c3537782908d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/f5/f5f67c52d1564df4a8936ccd202a3bd8" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/f5/f5f67c52d1564df4a8936ccd202a3bd8" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/f7/f70555f144d8491a825f0804e09c671c" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/f7/f70555f144d8491a825f0804e09c671c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/f7/f7b54ff4a43d4fcf81b4538b678e0bcc" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/f7/f7b54ff4a43d4fcf81b4538b678e0bcc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/f7/f7b54ff4a43d4fcf81b4538b678e0bcc.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/f7/f7b54ff4a43d4fcf81b4538b678e0bcc.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.dll.mdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.dll.mdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tidez.sln" beforeDir="false" afterPath="$PROJECT_DIR$/tidez.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tidez.userprefs" beforeDir="false" afterPath="$PROJECT_DIR$/tidez.userprefs" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="DropDownHandler.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/DropDownHandler.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="370">
+              <caret line="49" column="20" lean-forward="true" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
+              <folding>
+                <marker date="1535430540278" expanded="false" signature="6:78" ph="..." />
+                <marker date="1535430540278" expanded="true" signature="125:2082" ph="{...}" />
+                <marker date="1535430540278" expanded="true" signature="285:430" ph="/* THESE ORDERS MATTER, AND THAT'S GROSS ... */" />
+                <marker date="1535430540278" expanded="true" signature="448:671" ph="{...}" />
+                <marker date="1535430540278" expanded="true" signature="592:668" ph="{...}" />
+                <marker date="1535430540278" expanded="true" signature="754:1498" ph="{...}" />
+                <marker date="1535430540278" expanded="true" signature="1549:1556" ph="{...}" />
+                <marker date="1535430540278" expanded="true" signature="1611:1618" ph="{...}" />
+                <marker date="1535430540278" expanded="true" signature="1680:2080" ph="{...}" />
+                <marker date="1535430540278" expanded="true" signature="1908:2030" ph="{...}" />
+                <marker date="1535430540278" expanded="true" signature="1940:1958" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Weatherz.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Weatherz.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="614">
+              <caret line="251" column="78" selection-start-line="251" selection-start-column="78" selection-end-line="251" selection-end-column="78" />
+              <folding>
+                <marker date="1535430447443" expanded="false" signature="6:114" ph="..." />
+                <marker date="1535430447443" expanded="true" signature="154:10715" ph="{...}" />
+                <marker date="1535430447443" expanded="true" signature="158:499" ph="/* https://api.weather.gov/points/47.9846,-122.5621 &lt;-- 1 request here to get the data needed to ask the other qu ... */" />
+                <marker date="1535430447443" expanded="true" signature="980:1017" ph="{...}" />
+                <marker date="1535430447443" expanded="true" signature="1066:1070" ph="{...}" />
+                <marker date="1535430447443" expanded="true" signature="1125:1132" ph="{...}" />
+                <marker date="1535430447443" expanded="true" signature="1166:1541" ph="{...}" />
+                <marker date="1535430447443" expanded="true" signature="1479:1538" ph="{...}" />
+                <marker date="1535430447443" expanded="true" signature="1582:1973" ph="{...}" />
+                <marker date="1535430447443" expanded="true" signature="1859:1919" ph="{...}" />
+                <marker date="1535430447443" expanded="true" signature="2013:2590" ph="{...}" />
+                <marker date="1535430447443" expanded="true" signature="2442:2510" ph="{...}" />
+                <marker date="1535430447443" expanded="true" signature="2634:3122" ph="{...}" />
+                <marker date="1535430447443" expanded="true" signature="3165:3646" ph="{...}" />
+                <marker date="1535430447443" expanded="true" signature="3700:4417" ph="{...}" />
+                <marker date="1535430447443" expanded="true" signature="4005:4066" ph="{...}" />
+                <marker date="1535430447443" expanded="true" signature="4266:4341" ph="{...}" />
+                <marker date="1535430447443" expanded="true" signature="4469:6066" ph="{...}" />
+                <marker date="1535430447443" expanded="true" signature="4775:4842" ph="{...}" />
+                <marker date="1535430447443" expanded="true" signature="4846:4956" ph="/* find the first forecast that isn't over yet from when the start date is ... */" />
+                <marker date="1535430447443" expanded="true" signature="5163:6033" ph="{...}" />
+                <marker date="1535430447443" expanded="true" signature="5374:5590" ph="/* I tried for like 6 minutes to only include 3 forecasts, then I decided to let the text box limit it beacuse I  ... */" />
+                <marker date="1535430447443" expanded="true" signature="5678:6028" ph="{...}" />
+                <marker date="1535430447443" expanded="true" signature="5714:5762" ph="{...}" />
+                <marker date="1535430447443" expanded="true" signature="6117:9713" ph="{...}" />
+                <marker date="1535430447443" expanded="true" signature="6614:6744" ph="{...}" />
+                <marker date="1535430447443" expanded="true" signature="7957:8090" ph="{...}" />
+                <marker date="1535430447443" expanded="true" signature="8097:8393" ph="{...}" />
+                <marker date="1535430447443" expanded="true" signature="8668:8801" ph="{...}" />
+                <marker date="1535430447443" expanded="true" signature="8808:9025" ph="{...}" />
+                <marker date="1535430447443" expanded="true" signature="8816:8922" ph="/* CURRENT WIND DIRECTION ... */" />
+                <marker date="1535430447443" expanded="true" signature="9295:9428" ph="{...}" />
+                <marker date="1535430447443" expanded="true" signature="9435:9710" ph="{...}" />
+                <marker date="1535430447443" expanded="true" signature="9820:10109" ph="{...}" />
+                <marker date="1535430447443" expanded="true" signature="9903:9983" ph="{...}" />
+                <marker date="1535430447443" expanded="true" signature="10245:10713" ph="{...}" />
+                <marker date="1535430447443" expanded="true" signature="10305:10695" ph="{...}" />
+                <marker date="1535430447443" expanded="true" signature="10528:10548" ph="{...}" />
+                <marker date="1535430447443" expanded="true" signature="10634:10690" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Locationz.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Locationz.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+              <folding>
+                <marker date="1518041376000" expanded="false" signature="6:100" ph="..." />
+                <marker date="1518041376000" expanded="true" signature="141:2213" ph="{...}" />
+                <marker date="1518041376000" expanded="true" signature="191:225" ph="{...}" />
+                <marker date="1518041376000" expanded="true" signature="280:285" ph="{...}" />
+                <marker date="1518041376000" expanded="true" signature="429:447" ph="{...}" />
+                <marker date="1518041376000" expanded="true" signature="472:490" ph="{...}" />
+                <marker date="1518041376000" expanded="true" signature="516:559" ph="{...}" />
+                <marker date="1518041376000" expanded="true" signature="584:2211" ph="{...}" />
+                <marker date="1518041376000" expanded="true" signature="708:775" ph="{...}" />
+                <marker date="1518041376000" expanded="true" signature="978:1093" ph="{...}" />
+                <marker date="1518041376000" expanded="true" signature="1165:1263" ph="{...}" />
+                <marker date="1518041376000" expanded="true" signature="1352:1473" ph="{...}" />
+                <marker date="1518041376000" expanded="true" signature="1480:2105" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NOAAWeatherz.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/NOAAWeatherz.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="59" column="65" selection-start-line="59" selection-start-column="65" selection-end-line="59" selection-end-column="65" />
+              <folding>
+                <marker date="1535429549306" expanded="true" signature="37:2302" ph="{...}" />
+                <marker date="1535429549306" expanded="true" signature="91:155" ph="{...}" />
+                <marker date="1535429549306" expanded="true" signature="197:243" ph="{...}" />
+                <marker date="1535429549306" expanded="true" signature="300:664" ph="{...}" />
+                <marker date="1535429549306" expanded="true" signature="725:774" ph="{...}" />
+                <marker date="1535429549306" expanded="true" signature="824:879" ph="{...}" />
+                <marker date="1535429549306" expanded="true" signature="955:1008" ph="{...}" />
+                <marker date="1535429549306" expanded="true" signature="1077:1193" ph="{...}" />
+                <marker date="1535429549306" expanded="true" signature="1258:1559" ph="{...}" />
+                <marker date="1535429549306" expanded="true" signature="1613:1671" ph="{...}" />
+                <marker date="1535429549306" expanded="true" signature="1706:2300" ph="{...}" />
+                <marker date="1535429549306" expanded="true" signature="1829:1917" ph="{...}" />
+                <marker date="1535429549306" expanded="true" signature="1979:2105" ph="{...}" />
+                <marker date="1535429549306" expanded="true" signature="2039:2060" ph="{...}" />
+                <marker date="1535429549306" expanded="true" signature="2163:2297" ph="{...}" />
+                <marker date="1535429549306" expanded="true" signature="2223:2244" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>griddata</find>
+      <find>gridpoint</find>
+      <find>properties</find>
+      <find>waveheight</find>
+      <find>getpointfor</find>
+      <find>temp</find>
+      <find>current co</find>
+      <find>current</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/DaysInFutureUpdater.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Currentz.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/NOAATidez.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Tidez.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Graphz.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/NOAAWeatherz.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Locationz.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DropDownHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Weatherz.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/NOAACurrent.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/NOAATidez.cs" />
+        <option value="$PROJECT_DIR$/Assets/NOAAWeatherz.cs" />
+        <option value="$PROJECT_DIR$/Assets/Weatherz.cs" />
+        <option value="$PROJECT_DIR$/Assets/DropDownHandler.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="877" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <autoscrollToSource SolutionExplorer="true" />
+      <autoscrollFromSource SolutionExplorer="true" />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="tidez (1 project)" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="tidez (1 project)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assembly-CSharp" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="tidez (1 project)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assembly-CSharp" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assets" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-file-system" value="false" />
+        <option name="show-all-items" value="false" />
+      </pane>
+      <pane id="Scratches" />
+      <pane id="UnityExplorer">
+        <option name="show-hidden-items" value="false" />
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2270f12f-ab9b-44ac-83f0-92cbc11f527a" name="Default" comment="" />
+      <created>1522696430051</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1522696430051</updated>
+      <workItem from="1522696432551" duration="2367000" />
+      <workItem from="1525056297952" duration="1173000" />
+      <workItem from="1535428439544" duration="2364000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="5904000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
+    <layout>
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Errors In Solution" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Unit Tests" order="7" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18333334" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Unity" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.40324596" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="NuGet" order="7" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Assets/DropDownHandler.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1535430540278" expanded="false" signature="6:78" ph="..." />
+            <marker date="1535430540278" expanded="true" signature="125:2082" ph="{...}" />
+            <marker date="1535430540278" expanded="true" signature="285:430" ph="/* THESE ORDERS MATTER, AND THAT'S GROSS ... */" />
+            <marker date="1535430540278" expanded="true" signature="448:671" ph="{...}" />
+            <marker date="1535430540278" expanded="true" signature="592:668" ph="{...}" />
+            <marker date="1535430540278" expanded="true" signature="754:1498" ph="{...}" />
+            <marker date="1535430540278" expanded="true" signature="1549:1556" ph="{...}" />
+            <marker date="1535430540278" expanded="true" signature="1611:1618" ph="{...}" />
+            <marker date="1535430540278" expanded="true" signature="1680:2080" ph="{...}" />
+            <marker date="1535430540278" expanded="true" signature="1908:2030" ph="{...}" />
+            <marker date="1535430540278" expanded="true" signature="1940:1958" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Weatherz.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2310">
+          <caret line="158" column="42" lean-forward="true" selection-start-line="158" selection-start-column="42" selection-end-line="158" selection-end-column="42" />
+          <folding>
+            <marker date="1535430447443" expanded="false" signature="6:114" ph="..." />
+            <marker date="1535430447443" expanded="true" signature="154:10715" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="158:499" ph="/* https://api.weather.gov/points/47.9846,-122.5621 &lt;-- 1 request here to get the data needed to ask the other qu ... */" />
+            <marker date="1535430447443" expanded="true" signature="980:1017" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="1066:1070" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="1125:1132" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="1166:1541" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="1479:1538" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="1582:1973" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="1859:1919" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="2013:2590" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="2442:2510" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="2634:3122" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="3165:3646" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="3700:4417" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="4005:4066" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="4266:4341" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="4469:6066" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="4775:4842" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="4846:4956" ph="/* find the first forecast that isn't over yet from when the start date is ... */" />
+            <marker date="1535430447443" expanded="true" signature="5163:6033" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="5374:5590" ph="/* I tried for like 6 minutes to only include 3 forecasts, then I decided to let the text box limit it beacuse I  ... */" />
+            <marker date="1535430447443" expanded="true" signature="5678:6028" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="5714:5762" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="6117:9713" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="6614:6744" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="7957:8090" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="8097:8393" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="8668:8801" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="8808:9025" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="8816:8922" ph="/* CURRENT WIND DIRECTION ... */" />
+            <marker date="1535430447443" expanded="true" signature="9295:9428" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="9435:9710" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="9820:10109" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="9903:9983" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="10245:10713" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="10305:10695" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="10528:10548" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="10634:10690" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/DropDownHandler.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1535430540278" expanded="false" signature="6:78" ph="..." />
+            <marker date="1535430540278" expanded="true" signature="125:2082" ph="{...}" />
+            <marker date="1535430540278" expanded="true" signature="285:430" ph="/* THESE ORDERS MATTER, AND THAT'S GROSS ... */" />
+            <marker date="1535430540278" expanded="true" signature="448:671" ph="{...}" />
+            <marker date="1535430540278" expanded="true" signature="592:668" ph="{...}" />
+            <marker date="1535430540278" expanded="true" signature="754:1498" ph="{...}" />
+            <marker date="1535430540278" expanded="true" signature="1549:1556" ph="{...}" />
+            <marker date="1535430540278" expanded="true" signature="1611:1618" ph="{...}" />
+            <marker date="1535430540278" expanded="true" signature="1680:2080" ph="{...}" />
+            <marker date="1535430540278" expanded="true" signature="1908:2030" ph="{...}" />
+            <marker date="1535430540278" expanded="true" signature="1940:1958" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/NOAAWeatherz.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="56" column="42" selection-start-line="56" selection-start-column="10" selection-end-line="56" selection-end-column="42" />
+          <folding>
+            <marker date="1535429549306" expanded="true" signature="37:2302" ph="{...}" />
+            <marker date="1535429549306" expanded="true" signature="91:155" ph="{...}" />
+            <marker date="1535429549306" expanded="true" signature="197:243" ph="{...}" />
+            <marker date="1535429549306" expanded="true" signature="300:664" ph="{...}" />
+            <marker date="1535429549306" expanded="true" signature="725:774" ph="{...}" />
+            <marker date="1535429549306" expanded="true" signature="824:879" ph="{...}" />
+            <marker date="1535429549306" expanded="true" signature="955:1008" ph="{...}" />
+            <marker date="1535429549306" expanded="true" signature="1077:1193" ph="{...}" />
+            <marker date="1535429549306" expanded="true" signature="1258:1559" ph="{...}" />
+            <marker date="1535429549306" expanded="true" signature="1613:1671" ph="{...}" />
+            <marker date="1535429549306" expanded="true" signature="1706:2300" ph="{...}" />
+            <marker date="1535429549306" expanded="true" signature="1829:1917" ph="{...}" />
+            <marker date="1535429549306" expanded="true" signature="1979:2105" ph="{...}" />
+            <marker date="1535429549306" expanded="true" signature="2039:2060" ph="{...}" />
+            <marker date="1535429549306" expanded="true" signature="2163:2297" ph="{...}" />
+            <marker date="1535429549306" expanded="true" signature="2223:2244" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Weatherz.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2910">
+          <caret line="198" lean-forward="true" selection-start-line="198" selection-end-line="198" />
+          <folding>
+            <marker date="1535430447443" expanded="false" signature="6:114" ph="..." />
+            <marker date="1535430447443" expanded="true" signature="154:10715" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="158:499" ph="/* https://api.weather.gov/points/47.9846,-122.5621 &lt;-- 1 request here to get the data needed to ask the other qu ... */" />
+            <marker date="1535430447443" expanded="true" signature="980:1017" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="1066:1070" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="1125:1132" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="1166:1541" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="1479:1538" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="1582:1973" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="1859:1919" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="2013:2590" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="2442:2510" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="2634:3122" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="3165:3646" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="3700:4417" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="4005:4066" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="4266:4341" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="4469:6066" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="4775:4842" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="4846:4956" ph="/* find the first forecast that isn't over yet from when the start date is ... */" />
+            <marker date="1535430447443" expanded="true" signature="5163:6033" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="5374:5590" ph="/* I tried for like 6 minutes to only include 3 forecasts, then I decided to let the text box limit it beacuse I  ... */" />
+            <marker date="1535430447443" expanded="true" signature="5678:6028" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="5714:5762" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="6117:9713" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="6614:6744" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="7957:8090" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="8097:8393" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="8668:8801" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="8808:9025" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="8816:8922" ph="/* CURRENT WIND DIRECTION ... */" />
+            <marker date="1535430447443" expanded="true" signature="9295:9428" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="9435:9710" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="9820:10109" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="9903:9983" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="10245:10713" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="10305:10695" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="10528:10548" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="10634:10690" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/NOAATidez.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="605">
+          <caret line="76" column="24" selection-start-line="76" selection-start-column="24" selection-end-line="76" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Tidez.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="830">
+          <caret line="107" column="9" selection-start-line="107" selection-start-column="9" selection-end-line="107" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/DaysInFutureUpdater.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Graphz.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/NOAACurrent.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Currentz.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1512017695000" expanded="false" signature="6:134" ph="..." />
+            <marker date="1512017695000" expanded="true" signature="174:5197" ph="{...}" />
+            <marker date="1512017695000" expanded="true" signature="509:546" ph="{...}" />
+            <marker date="1512017695000" expanded="true" signature="578:890" ph="{...}" />
+            <marker date="1512017695000" expanded="true" signature="952:1334" ph="{...}" />
+            <marker date="1512017695000" expanded="true" signature="1034:1050" ph="{...}" />
+            <marker date="1512017695000" expanded="true" signature="1208:1224" ph="{...}" />
+            <marker date="1512017695000" expanded="true" signature="1383:3423" ph="{...}" />
+            <marker date="1512017695000" expanded="true" signature="3465:4542" ph="{...}" />
+            <marker date="1512017695000" expanded="true" signature="4614:5193" ph="{...}" />
+            <marker date="1512017695000" expanded="true" signature="4677:5178" ph="{...}" />
+            <marker date="1512017695000" expanded="true" signature="4780:5174" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/NOAAWeatherz.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="59" column="65" selection-start-line="59" selection-start-column="65" selection-end-line="59" selection-end-column="65" />
+          <folding>
+            <marker date="1535429549306" expanded="true" signature="37:2302" ph="{...}" />
+            <marker date="1535429549306" expanded="true" signature="91:155" ph="{...}" />
+            <marker date="1535429549306" expanded="true" signature="197:243" ph="{...}" />
+            <marker date="1535429549306" expanded="true" signature="300:664" ph="{...}" />
+            <marker date="1535429549306" expanded="true" signature="725:774" ph="{...}" />
+            <marker date="1535429549306" expanded="true" signature="824:879" ph="{...}" />
+            <marker date="1535429549306" expanded="true" signature="955:1008" ph="{...}" />
+            <marker date="1535429549306" expanded="true" signature="1077:1193" ph="{...}" />
+            <marker date="1535429549306" expanded="true" signature="1258:1559" ph="{...}" />
+            <marker date="1535429549306" expanded="true" signature="1613:1671" ph="{...}" />
+            <marker date="1535429549306" expanded="true" signature="1706:2300" ph="{...}" />
+            <marker date="1535429549306" expanded="true" signature="1829:1917" ph="{...}" />
+            <marker date="1535429549306" expanded="true" signature="1979:2105" ph="{...}" />
+            <marker date="1535429549306" expanded="true" signature="2039:2060" ph="{...}" />
+            <marker date="1535429549306" expanded="true" signature="2163:2297" ph="{...}" />
+            <marker date="1535429549306" expanded="true" signature="2223:2244" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Weatherz.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="614">
+          <caret line="251" column="78" selection-start-line="251" selection-start-column="78" selection-end-line="251" selection-end-column="78" />
+          <folding>
+            <marker date="1535430447443" expanded="false" signature="6:114" ph="..." />
+            <marker date="1535430447443" expanded="true" signature="154:10715" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="158:499" ph="/* https://api.weather.gov/points/47.9846,-122.5621 &lt;-- 1 request here to get the data needed to ask the other qu ... */" />
+            <marker date="1535430447443" expanded="true" signature="980:1017" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="1066:1070" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="1125:1132" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="1166:1541" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="1479:1538" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="1582:1973" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="1859:1919" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="2013:2590" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="2442:2510" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="2634:3122" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="3165:3646" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="3700:4417" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="4005:4066" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="4266:4341" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="4469:6066" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="4775:4842" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="4846:4956" ph="/* find the first forecast that isn't over yet from when the start date is ... */" />
+            <marker date="1535430447443" expanded="true" signature="5163:6033" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="5374:5590" ph="/* I tried for like 6 minutes to only include 3 forecasts, then I decided to let the text box limit it beacuse I  ... */" />
+            <marker date="1535430447443" expanded="true" signature="5678:6028" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="5714:5762" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="6117:9713" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="6614:6744" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="7957:8090" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="8097:8393" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="8668:8801" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="8808:9025" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="8816:8922" ph="/* CURRENT WIND DIRECTION ... */" />
+            <marker date="1535430447443" expanded="true" signature="9295:9428" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="9435:9710" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="9820:10109" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="9903:9983" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="10245:10713" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="10305:10695" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="10528:10548" ph="{...}" />
+            <marker date="1535430447443" expanded="true" signature="10634:10690" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Locationz.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+          <folding>
+            <marker date="1518041376000" expanded="false" signature="6:100" ph="..." />
+            <marker date="1518041376000" expanded="true" signature="141:2213" ph="{...}" />
+            <marker date="1518041376000" expanded="true" signature="191:225" ph="{...}" />
+            <marker date="1518041376000" expanded="true" signature="280:285" ph="{...}" />
+            <marker date="1518041376000" expanded="true" signature="429:447" ph="{...}" />
+            <marker date="1518041376000" expanded="true" signature="472:490" ph="{...}" />
+            <marker date="1518041376000" expanded="true" signature="516:559" ph="{...}" />
+            <marker date="1518041376000" expanded="true" signature="584:2211" ph="{...}" />
+            <marker date="1518041376000" expanded="true" signature="708:775" ph="{...}" />
+            <marker date="1518041376000" expanded="true" signature="978:1093" ph="{...}" />
+            <marker date="1518041376000" expanded="true" signature="1165:1263" ph="{...}" />
+            <marker date="1518041376000" expanded="true" signature="1352:1473" ph="{...}" />
+            <marker date="1518041376000" expanded="true" signature="1480:2105" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/DropDownHandler.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="49" column="20" lean-forward="true" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
+          <folding>
+            <marker date="1535430540278" expanded="false" signature="6:78" ph="..." />
+            <marker date="1535430540278" expanded="true" signature="125:2082" ph="{...}" />
+            <marker date="1535430540278" expanded="true" signature="285:430" ph="/* THESE ORDERS MATTER, AND THAT'S GROSS ... */" />
+            <marker date="1535430540278" expanded="true" signature="448:671" ph="{...}" />
+            <marker date="1535430540278" expanded="true" signature="592:668" ph="{...}" />
+            <marker date="1535430540278" expanded="true" signature="754:1498" ph="{...}" />
+            <marker date="1535430540278" expanded="true" signature="1549:1556" ph="{...}" />
+            <marker date="1535430540278" expanded="true" signature="1611:1618" ph="{...}" />
+            <marker date="1535430540278" expanded="true" signature="1680:2080" ph="{...}" />
+            <marker date="1535430540278" expanded="true" signature="1908:2030" ph="{...}" />
+            <marker date="1535430540278" expanded="true" signature="1940:1958" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

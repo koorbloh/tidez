@@ -55,6 +55,9 @@ namespace NOAAWeathers
 
 	[System.Serializable]
 	class GridPointForecastData_properties {
+		public GridPointForecastData_windWaveHeight temperature;
+		public GridPointForecastData_windWaveHeight windSpeed;
+		public GridPointForecastData_windWaveHeight windDirection;
 		public GridPointForecastData_windWaveHeight waveHeight;
 		public GridPointForecastData_windWaveHeight windWaveHeight;
 	}

@@ -2,18 +2,14 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Weatherz.cs">
     <Files>
-      <File FileName="Assets/Locationz.cs" Line="76" Column="10" />
-      <File FileName="Assets/DropDownHandler.cs" Line="35" Column="76" />
-      <File FileName="Assets/Weatherz.cs" Line="94" Column="1" />
-      <File FileName="Assets/NOAAWeatherz.cs" Line="39" Column="27" />
+      <File FileName="Assets/Weatherz.cs" Line="63" Column="26" />
+      <File FileName="Assets/NOAAWeatherz.cs" Line="21" Column="25" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/data/p4/z2_unity_prototyping/tidez/Assets/Locationz.cs" line="74" column="58" />
-      <Breakpoint file="/data/p4/z2_unity_prototyping/tidez/Assets/Locationz.cs" line="65" column="1" />
-      <Breakpoint file="/data/p4/z2_unity_prototyping/tidez/Assets/Locationz.cs" line="53" column="1" />
-      <Breakpoint file="/data/p4/z2_unity_prototyping/tidez/Assets/Weatherz.cs" line="139" column="40" />
+      <Breakpoint file="/data/p4/z2_unity_prototyping/tidez/Assets/Weatherz.cs" line="155" column="1" />
+      <Breakpoint file="/data/p4/z2_unity_prototyping/tidez/Assets/Weatherz.cs" line="146" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

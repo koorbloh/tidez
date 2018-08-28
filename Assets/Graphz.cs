@@ -56,10 +56,10 @@ public class Graphz {
 
 			//find a y pixel
 			float feet = dataDelegate(graphStartTime.AddMinutes(minutesPerPixel * x));
-			texture.SetPixel (x, (int)feet + axisHeight-1, Color.blue);
-			texture.SetPixel (x, (int)feet + axisHeight, Color.blue);
-			texture.SetPixel (x, (int)feet + axisHeight+1, Color.blue);
-			texture.SetPixel (x, (int)feet + axisHeight+2, Color.blue);
+			texture.SetPixel(x, (int)feet + axisHeight - 1, Color.blue);
+			texture.SetPixel(x, (int)feet + axisHeight + 0, Color.blue);
+			texture.SetPixel(x, (int)feet + axisHeight + 1, Color.blue);
+			texture.SetPixel(x, (int)feet + axisHeight + 2, Color.blue);
 			//if it's been 4 hours since we last drew a line, draw one
 			if (graphStartTime.AddMinutes(minutesPerPixel * x) > lastLine.AddHours(4)) {
 				for (int y = 0; y < imageDimensionsY; ++y) {

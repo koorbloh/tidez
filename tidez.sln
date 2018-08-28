@@ -1,7 +1,7 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tidez", "Assembly-CSharp.csproj", "{89BCA99A-6B87-A22D-43F6-9E86C2F9BA02}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{89BCA99A-6B87-A22D-43F6-9E86C2F9BA02}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

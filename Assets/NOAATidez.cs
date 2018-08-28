@@ -30,51 +30,67 @@ namespace NOAA {
 			this.request = request + "&";
 		}
 
-		public TidesAndCurrentsRequestBuilder withRange(int hours) {
-			return new TidesAndCurrentsRequestBuilder(request + "range=" + hours.ToString ());
+		private void appendToRequest(string toAppend)
+		{
+			this.request += toAppend + "&";
+		}
+		
+		public TidesAndCurrentsRequestBuilder withRange(int hours)
+		{
+			appendToRequest("range=" + hours.ToString());
+			return this;
 		}
 
 		public TidesAndCurrentsRequestBuilder atStation(int station) {
-			return new TidesAndCurrentsRequestBuilder(request + "station=" + station.ToString ());
+			appendToRequest("station=" + station.ToString ());
+			return this;
 		}
 
 		public TidesAndCurrentsRequestBuilder getPredictions() {
-			return new TidesAndCurrentsRequestBuilder(request + "product=predictions");
+			appendToRequest("product=predictions");
+			return this;
 		}
 
 		public TidesAndCurrentsRequestBuilder getCurrents() {
-			return new TidesAndCurrentsRequestBuilder(request + "product=currents");
+			appendToRequest("product=currents");
+			return this;
 		}
 
 
 		public TidesAndCurrentsRequestBuilder withStandardUnitsAndTimeZone() {
-			return new TidesAndCurrentsRequestBuilder(request + "units=english&time_zone=lst_ldt");
+			appendToRequest("units=english&time_zone=lst_ldt");
+			return this;
 		}
 
 		public TidesAndCurrentsRequestBuilder provideApplicationName() {
-			return new TidesAndCurrentsRequestBuilder(request + "application=koorbloh");
+			appendToRequest("application=koorbloh");
+			return this;
 		}
 
 		public TidesAndCurrentsRequestBuilder forDatum(string datum) {
-			return new TidesAndCurrentsRequestBuilder(request + "datum=" + datum);
+			appendToRequest("datum=" + datum);
+			return this;
 		}
 
 		public TidesAndCurrentsRequestBuilder specifyFormat(string format) {
-			return new TidesAndCurrentsRequestBuilder (request + "format=" + format);
+			appendToRequest("format=" + format);
+			return this;
 		}
 
 		public TidesAndCurrentsRequestBuilder withBeginDate(DateTime beginDate) {
-			return new TidesAndCurrentsRequestBuilder (request + "begin_date=" + beginDate.ToShortDateString());
+			appendToRequest("begin_date=" + beginDate.ToShortDateString());
+			return this;
 		}
 
 		public TidesAndCurrentsRequestBuilder withEndDate(DateTime endDate) {
-			return new TidesAndCurrentsRequestBuilder (request + "end_date=" + endDate.ToShortDateString());
+			appendToRequest("end_date=" + endDate.ToShortDateString());
+			return this;
 		}
 
 		public string getRequest() {
 			return request.Substring(0, request.Length - 1);
 		}
 
-		string request;
+		private string request;
 	}
 }
